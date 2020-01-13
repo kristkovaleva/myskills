@@ -1,13 +1,13 @@
 // Parallax //
 
-var $fog = $('.fog'),
+let $fog = $('.fog'),
     $pers = $('.layer-1'),
     $sparks = $('.layer-2'),
     $container = $('body'),
     container_w = $container.width();
 
 $(window).on('mousemove.parallax', function(event) {
-  var pos_x = event.pageX,
+  let pos_x = event.pageX,
       left  = 0;
 
   left = container_w / 2 - pos_x;
@@ -51,9 +51,9 @@ $(window).on('mousemove.parallax', function(event) {
 
 // Back Change Js //
 
-var images = ["bg-1.jpg", "bg-2.jpg", "bg-3.jpg"];
+let images = ["bg-1.jpg", "bg-2.jpg", "bg-3.jpg"];
 $(function () {
-    var i = 0;
+    let i = 0;
     $(".services-bg-image").css("background-image", "url(img/" + images[i] + ")");
     setInterval(function () {
         i++;

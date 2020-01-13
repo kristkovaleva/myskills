@@ -4,7 +4,7 @@
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta name="format-detection" content="telephone=no">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport">
     <title>Sublime</title>
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -15,11 +15,8 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="slick/slick.min.js"></script>
-
     <script src="js/header.js"></script>
     <script src="js/scroll-top.js"></script>
-
 </head>
 
 <body>
@@ -30,7 +27,7 @@
                 <h1><span>We</span> create <br> Awesome Games</h1>
             </div><!-- /.slogan -->
             <input type="checkbox" class="menu-checkbox" id="menu-checkbox" />
-            <nav role="navigation">
+            <nav>
                 <label for="menu-checkbox" class="toggle-button" data-open="Menu" data-close="Close" onclick></label>
                 <ul class="main-menu">
                     <li><a class="scroll-link" href="#about-anchor">About</a></li>
@@ -44,17 +41,19 @@
 
     <main>
 
-        <section class="hibox">
+        <div class="hibox">
             <div class="fog"></div>
             <div class="layer-1"></div>
             <div class="layer-2"></div>
             <div class="light"></div>
-        </section><!-- /.hibox -->
+        </div><!-- /.hibox -->
 
         <section id="about-anchor" class="about wrap">
+
             <div class="sublimebox">
-                <h2><span>About</span><br><span>Sublime</span></h2>
+                <h2><span><b>A</b>bout</span><br><span><b>S</b>ublime</span></h2>
             </div><!-- /.sublimebox -->
+
             <div class="description">
                 <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim.
                         Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</span>
@@ -71,83 +70,355 @@
 
 
         <section id="development-anchor" class="development wrap">
-            <div>
+            <div class="autoclear">
                 <img src="img/gamepad.svg" alt="game-icon">
                 <h4>App Development</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt ea non soluta similique cupiditate odio rerum? Ratione, a aliquam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt ea non soluta similique cupiditate odio rerum? Ratione, a aliquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt ea non soluta similique
+                    cupiditate odio rerum? Ratione, a aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit incidunt ea non soluta similique
+                    cupiditate odio rerum? Ratione, a aliquam.</p>
             </div>
-    
+
             <div>
                 <img src="img/gamepad.svg" alt="game-icon">
                 <h4>Game Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt ea non soluta similique cupiditate odio rerum? Ratione, a aliquam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt ea non soluta similique cupiditate odio rerum? Ratione, a aliquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt ea non soluta similique
+                    cupiditate odio rerum? Ratione, a aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit incidunt ea non soluta similique
+                    cupiditate odio rerum? Ratione, a aliquam.</p>
             </div>
-    
+
             <div>
                 <img src="img/gamepad.svg" alt="game-icon">
                 <h4>Content Creation</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt ea non soluta similique cupiditate odio rerum? Ratione, a aliquam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt ea non soluta similique cupiditate odio rerum? Ratione, a aliquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt ea non soluta similique
+                    cupiditate odio rerum? Ratione, a aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit incidunt ea non soluta similique
+                    cupiditate odio rerum? Ratione, a aliquam.</p>
             </div>
-            </section><!-- /#development-anchor -->
+        </section><!-- /#development-anchor -->
 
 
         <section id="projects-anchor" class="projects wrap">
             <h3><span>F</span>eatured <span>P</span>rojects</h3>
- 
-                <ul class="tab-nav">
-                    <li><a href="#tab1" class="act">All works</a></li>
-                    <li><a href="#tab2">Games</a></li>
-                    <li><a href="#tab3">Applications</a></li>
-                    <li><a href="#tab4">Content Development</a></li>
-                </ul>
+
+            <ul class="tab-nav">
+                <li><a href="#tab1" class="act">All works</a></li>
+                <li><a href="#tab2">Games</a></li>
+                <li><a href="#tab3">Applications</a></li>
+                <li><a href="#tab4">Development</a></li>
+            </ul>
 
             <div class="tabs-wrap">
                 <div class="tab act" id="tab1">
-                    <div><img src="img/pic-projects-1.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-2.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-3.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-4.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-5.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-6.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-7.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-8.jpg" alt=""></div>
+                    <picture>
+                        <source srcset="img/pic-projects-1-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-1-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-1-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-1-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-1-x.webp">
+                        <img src="img/pic-projects-1-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-2-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-2-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-2-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-2-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-2-x.webp">
+                        <img src="img/pic-projects-2-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-3-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-3-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-3-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-3-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-3-x.webp">
+                        <img src="img/pic-projects-3-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-4-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-4-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-4-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-4-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-4-x.webp">
+                        <img src="img/pic-projects-4-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-5-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-5-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-5-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-5-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-5-x.webp">
+                        <img src="img/pic-projects-5-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-6-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-6-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-6-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-6-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-6-x.webp">
+                        <img src="img/pic-projects-6-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-7-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-7-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-7-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-7-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-7-x.webp">
+                        <img src="img/pic-projects-7-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-8-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-8-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-8-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-8-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-8-x.webp">
+                        <img src="img/pic-projects-8-x.jpg" alt="project picture"></picture>
                 </div>
                 <div class="tab" id="tab2">
-                    <div><img src="img/pic-projects-2.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-2.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-2.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-2.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-2.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-2.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-2.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-2.jpg" alt=""></div>
+                    <picture>
+                        <source srcset="img/pic-projects-9-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-9-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-9-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-9-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-9-x.webp">
+                        <img src="img/pic-projects-9-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-10-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-10-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-10-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-10-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-10-x.webp">
+                        <img src="img/pic-projects-10-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-11-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-11-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-11-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-11-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-11-x.webp">
+                        <img src="img/pic-projects-11-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-12-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-12-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-12-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-12-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-12-x.webp">
+                        <img src="img/pic-projects-12-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-13-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-13-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-13-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-13-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-13-x.webp">
+                        <img src="img/pic-projects-13-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-14-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-14-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-14-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-14-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-14-x.webp">
+                        <img src="img/pic-projects-14-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-15-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-15-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-15-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-15-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-15-x.webp">
+                        <img src="img/pic-projects-15-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-16-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-16-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-16-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-16-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-16-x.webp">
+                        <img src="img/pic-projects-16-x.jpg" alt="project picture"></picture>
                 </div>
                 <div class="tab" id="tab3">
-                    <div><img src="img/pic-projects-4.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-4.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-4.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-4.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-4.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-4.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-4.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-4.jpg" alt=""></div>
+                    <picture>
+                        <source srcset="img/pic-projects-18-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-18-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-18-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-18-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-18-x.webp">
+                        <img src="img/pic-projects-18-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-15-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-15-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-15-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-15-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-15-x.webp">
+                        <img src="img/pic-projects-15-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-14-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-14-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-14-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-14-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-14-x.webp">
+                        <img src="img/pic-projects-14-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-13-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-13-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-13-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-13-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-13-x.webp">
+                        <img src="img/pic-projects-13-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-12-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-12-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-12-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-12-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-12-x.webp">
+                        <img src="img/pic-projects-12-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-11-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-11-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-11-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-11-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-11-x.webp">
+                        <img src="img/pic-projects-11-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-10-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-10-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-10-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-10-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-10-x.webp">
+                        <img src="img/pic-projects-10-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-18-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-18-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-18-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-18-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-18-x.webp">
+                        <img src="img/pic-projects-18-x.jpg" alt="project picture"></picture>
                 </div>
                 <div class="tab" id="tab4">
-                    <div><img src="img/pic-projects-8.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-8.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-8.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-8.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-8.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-8.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-8.jpg" alt=""></div>
-                    <div><img src="img/pic-projects-8.jpg" alt=""></div>
+                    <picture>
+                        <source srcset="img/pic-projects-9-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-9-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-9-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-9-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-9-x.webp">
+                        <img src="img/pic-projects-9-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-8-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-8-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-8-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-8-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-8-x.webp">
+                        <img src="img/pic-projects-8-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-7-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-7-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-7-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-7-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-7-x.webp">
+                        <img src="img/pic-projects-7-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-6-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-6-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-6-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-6-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-6-x.webp">
+                        <img src="img/pic-projects-6-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-5-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-5-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-5-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-5-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-5-x.webp">
+                        <img src="img/pic-projects-5-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-4-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-4-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-4-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-4-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-4-x.webp">
+                        <img src="img/pic-projects-4-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-3-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-3-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-3-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-3-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-3-x.webp">
+                        <img src="img/pic-projects-3-x.jpg" alt="project picture"></picture>
+                    <picture>
+                        <source srcset="img/pic-projects-2-3x.webp" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-2-3x.jpg" media="(min-width: 1069px)">
+                        <source srcset="img/pic-projects-2-2x.webp" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-2-2x.jpg" media="(min-width: 736px)">
+                        <source srcset="img/pic-projects-2-x.webp">
+                        <img src="img/pic-projects-2-x.jpg" alt="project picture"></picture>
                 </div>
             </div><!-- /#tabsWrap -->
 
         </section><!-- /.projects-anchor -->
+
+        <section id="strategic-anchor" class="strategic wrap">
+            <h3><span>S</span>trategic <span>P</span>rocess</h3>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla
+                    pellentesque et nisi et euismod. Pellentesque quis tristique magna.</span>
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,
+                molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim
+                gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu.
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,
+                molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim
+                gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu.
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,
+                molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim
+                gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu.
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,
+                molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim
+                gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu.
+            </p>
+            <div class="strategic-box">
+                <picture>
+                    <source srcset="img/pic-strategic-1-3x.webp" media="(min-width: 1069px)">
+                    <source srcset="img/pic-strategic-1-3x.jpg" media="(min-width: 1069px)">
+                    <source srcset="img/pic-strategic-1-2x.webp" media="(min-width: 736px)">
+                    <source srcset="img/pic-strategic-1-2x.jpg" media="(min-width: 736px)">
+                    <source srcset="img/pic-strategic-1-x.webp">
+                    <img src="img/pic-strategic-1-x.jpg" alt="strategic picture"></picture>
+                <div class="strategic-info">
+                    <h4><span>O</span>ur<span> P</span>rocess</h4>
+                    <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie
+                            dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</span>
+                        Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                        sem, molestie tincidunt
+                    </p>
+                </div>
+            </div><!-- /.strategic-box -->
+
+            <div class="strategic-box">
+                <picture>
+                    <source srcset="img/pic-strategic-2-3x.webp" media="(min-width: 1069px)">
+                    <source srcset="img/pic-strategic-2-3x.jpg" media="(min-width: 1069px)">
+                    <source srcset="img/pic-strategic-2-2x.webp" media="(min-width: 736px)">
+                    <source srcset="img/pic-strategic-2-2x.jpg" media="(min-width: 736px)">
+                    <source srcset="img/pic-strategic-2-x.webp">
+                    <img src="img/pic-strategic-2-x.jpg" alt="strategic picture"></picture>
+                <div class="strategic-info">
+                    <h4><span>M</span>ethod</h4>
+                    <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie
+                            dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</span>
+                        Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                        sem, molestie tincidunt
+                    </p>
+                </div>
+            </div><!-- /.strategic-box -->
+
+            <div class="strategic-box">
+                <picture>
+                    <source srcset="img/pic-strategic-3-3x.webp" media="(min-width: 1069px)">
+                    <source srcset="img/pic-strategic-3-3x.jpg" media="(min-width: 1069px)">
+                    <source srcset="img/pic-strategic-3-2x.webp" media="(min-width: 736px)">
+                    <source srcset="img/pic-strategic-3-2x.jpg" media="(min-width: 736px)">
+                    <source srcset="img/pic-strategic-3-x.webp">
+                    <img src="img/pic-strategic-3-x.jpg" alt="strategic picture"></picture>
+                <div class="strategic-info">
+                    <h4><span>O</span>utcome</h4>
+                    <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie
+                            dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</span>
+                        Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                        sem, molestie tincidunt
+                    </p>
+                </div>
+            </div><!-- /.strategic-box -->
+
+
+        </section><!-- /#strategic-anchor -->
 
 
         <section id="services-anchor" class="services wrap">
@@ -180,68 +451,157 @@
                     </li>
 
                 </ul>
+                <div class="services-bg-image"></div><!-- /.services-bg-image -->
             </div>
 
-            <div class="services-bg-image"></div><!-- /.services-bg-image -->
         </section><!-- /#services -->
 
-
-        <section id="testimonials-anchor" class="testimonials wrap">            
-            <h3><span>T</span>estimonials</h3>
-            
-            <div class="slidebox">
-    
-                <div>
-                    <div class="userbox">
-                        <div class="usertext">
-                            <p> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie
-                                    dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique
-                                    magna.</span>
-                                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse
-                                justo sem, molestie tincidunt</p>
-                        </div><!-- /.leftbox -->
-                        <div class="userinfo"><img src="img/ava-1.jpg" alt="">
-                            <p>John Doe <span> CoFounder / CEO</span></p>
-                        </div><!-- /.rightbox -->
-                    </div><!-- /.userbox -->
-                </div>
-    
-                <div>
-                    <div class="userbox">
-                        <div class="usertext">
-                            <p> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie
-                                    dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique
-                                    magna.</span>
-                                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse
-                                justo sem, molestie tincidunt</p>
-                        </div><!-- /.leftbox -->
-                        <div class="userinfo"><img src="img/ava-1.jpg" alt="">
-                            <p>John Doe <span> CoFounder / CEO</span></p>
-                        </div><!-- /.rightbox -->
-                    </div><!-- /.userbox -->
-                </div>
-    
-                <div>
-                    <div class="userbox">
-                        <div class="usertext">
-                            <p> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie
-                                    dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique
-                                    magna.</span>
-                                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse
-                                justo sem, molestie tincidunt</p>
-                        </div><!-- /.leftbox -->
-                        <div class="userinfo"><img src="img/ava-1.jpg" alt="">
-                            <p>John Doe <span> CoFounder / CEO</span></p>
-                        </div><!-- /.rightbox -->
-                    </div><!-- /.userbox -->
-                </div>
-    
-            </div><!-- /.slidebox -->
-        </section><!-- /#testimonials-box -->
+        <section id="team-anchor" class="team wrap">
 
 
+            <div class="team-heading">
+                <h3><span>O</span>ur <span>T</span>eam</h3>
+            </div>
+            <div class="team-box">
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim.
+                        Nulla pellentesque et nisi et euismod. Pellentesque quis tristique magna.</span>
+                    Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo
+                    sem, molestie tincidunt</p>
+                <ul class="team-list">
+                    <li>
+                        <picture>
+                            <source srcset="img/team-photo-1-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/team-photo-1-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/team-photo-1-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/team-photo-1-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/team-photo-1-x.webp">
+                            <img src="img/team-photo-1-x.jpg" alt="employee photo"></picture>
+                        <p>John Doe <span>CoFounder / CEO</span></p>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="img/team-photo-2-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/team-photo-2-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/team-photo-2-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/team-photo-2-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/team-photo-2-x.webp">
+                            <img src="img/team-photo-2-x.jpg" alt="employee photo"></picture>
+                        <p>John Doe <span>CoFounder / CEO</span></p>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="img/team-photo-3-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/team-photo-3-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/team-photo-3-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/team-photo-3-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/team-photo-3-x.webp">
+                            <img src="img/team-photo-3-x.jpg" alt="employee photo"></picture>
+                        <p>John Doe <span>CoFounder / CEO</span></p>
+                    </li>
+                    <li>
+                        <picture>
+                            <source srcset="img/team-photo-4-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/team-photo-4-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/team-photo-4-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/team-photo-4-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/team-photo-4-x.webp">
+                            <img src="img/team-photo-4-x.jpg" alt="employee photo"></picture>
+                        <p>John Doe <span>CoFounder / CEO</span></p>
+                    </li>
+                </ul>
+                <a href="grid.html" target="grid">Learn more about our team</a>
+            </div><!-- /.team-box -->
+        </section><!-- /.team- -->
 
-        <section id="blog-anchor" class="blog wrap">            
+
+        <section id="testimonials-anchor" class="testimonials wrap">
+
+            <div class="testimonials-box">
+
+                <h3><span>T</span>estimonials</h3>
+
+                <div class="slidebox">
+
+                    <div>
+                        <div class="userbox">
+                            <div class="usertext">
+                                <p> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis
+                                        molestie
+                                        dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique
+                                        magna.</span>
+                                    Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam.
+                                    Suspendisse
+                                    justo sem, molestie tincidunt</p>
+                            </div><!-- /.leftbox -->
+                            <div class="userinfo">
+                                <picture>
+                                    <source srcset="img/testimonials-photo-1-3x.webp" media="(min-width: 1069px)">
+                                    <source srcset="img/testimonials-photo-1-3x.jpg" media="(min-width: 1069px)">
+                                    <source srcset="img/testimonials-photo-1-2x.webp" media="(min-width: 736px)">
+                                    <source srcset="img/testimonials-photo-1-2x.jpg" media="(min-width: 736px)">
+                                    <source srcset="img/testimonials-photo-1-x.webp">
+                                    <img src="img/testimonials-photo-1-x.jpg" alt="client photo"></picture>
+                                <p>John Doe <span> CoFounder / CEO</span></p>
+                            </div><!-- /.rightbox -->
+                        </div><!-- /.userbox -->
+                    </div>
+
+                    <div>
+                        <div class="userbox">
+                            <div class="usertext">
+                                <p> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis
+                                        molestie
+                                        dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique
+                                        magna.</span>
+                                    Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam.
+                                    Suspendisse
+                                    justo sem, molestie tincidunt</p>
+                            </div><!-- /.leftbox -->
+                            <div class="userinfo">
+                                <picture>
+                                    <source srcset="img/testimonials-photo-2-3x.webp" media="(min-width: 1069px)">
+                                    <source srcset="img/testimonials-photo-2-3x.jpg" media="(min-width: 1069px)">
+                                    <source srcset="img/testimonials-photo-2-2x.webp" media="(min-width: 736px)">
+                                    <source srcset="img/testimonials-photo-2-2x.jpg" media="(min-width: 736px)">
+                                    <source srcset="img/testimonials-photo-2-x.webp">
+                                    <img src="img/testimonials-photo-2-x.jpg" alt="client photo"></picture>
+                                <p>John Doe <span> CoFounder / CEO</span></p>
+                            </div><!-- /.rightbox -->
+                        </div><!-- /.userbox -->
+                    </div>
+
+                    <div>
+                        <div class="userbox">
+                            <div class="usertext">
+                                <p> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis
+                                        molestie
+                                        dignissim. Nulla pellentesque et nisi et euismod. Pellentesque quis tristique
+                                        magna.</span>
+                                    Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam.
+                                    Suspendisse
+                                    justo sem, molestie tincidunt</p>
+                            </div><!-- /.leftbox -->
+                            <div class="userinfo">
+                                <picture>
+                                    <source srcset="img/testimonials-photo-3-3x.webp" media="(min-width: 1069px)">
+                                    <source srcset="img/testimonials-photo-3-3x.jpg" media="(min-width: 1069px)">
+                                    <source srcset="img/testimonials-photo-3-2x.webp" media="(min-width: 736px)">
+                                    <source srcset="img/testimonials-photo-3-2x.jpg" media="(min-width: 736px)">
+                                    <source srcset="img/testimonials-photo-3-x.webp">
+                                    <img src="img/testimonials-photo-3-x.jpg" alt="client photo"></picture>
+                                <p>John Doe <span> CoFounder / CEO</span></p>
+                            </div><!-- /.rightbox -->
+                        </div><!-- /.userbox -->
+                    </div>
+
+                </div><!-- /.slidebox -->
+
+            </div><!-- /.testimonials-box -->
+        </section><!-- /#testimonials -->
+
+
+
+        <section id="blog-anchor" class="blog wrap">
             <div class="blog-nav">
                 <h3><span>B</span>logs</h3>
                 <ul class="blog-nav-list">
@@ -251,166 +611,316 @@
                     <li><a href="#tab4-4">Design Solutions</a></li>
                     <li><a href="#tab5-5">Quality Assurance</a></li>
                     <li><a href="#tab6-6">Development Mode</a></li>
-                    <li><a href="#tab7-7">What’s Out There</a></li>                            
                 </ul>
             </div>
 
             <div class="blog-wrap">
                 <div class="blog-tab act" id="tab1-1">
-                    <div>
-                        <img src="img/blog-item.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-1-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-1-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-1-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-1-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-1-x.webp">
+                            <img src="img/blog-pic-1-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-11-09" title="2019-11-09"> November 9th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item2.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-2-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-2-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-2-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-2-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-2-x.webp">
+                            <img src="img/blog-pic-2-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-10-21" title="2019-10-21"> October 21th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item3.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    </div>                                      
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-3-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-3-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-3-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-3-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-3-x.webp">
+                            <img src="img/blog-pic-3-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-06-07" title="2019-06-07"> June 7th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
+                    </div>
                 </div>
                 <div class="blog-tab" id="tab2-2">
-                    <div>
-                        <img src="img/blog-item3.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-4-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-4-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-4-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-4-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-4-x.webp">
+                            <img src="img/blog-pic-4-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-10-21" title="2019-10-21"> October 21th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item2.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-5-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-5-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-5-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-5-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-5-x.webp">
+                            <img src="img/blog-pic-5-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-06-07" title="2019-06-07"> June 7th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    </div>               
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-4-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-4-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-4-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-4-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-4-x.webp">
+                            <img src="img/blog-pic-4-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-11-09" title="2019-11-09"> November 9th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
+                    </div>
                 </div>
                 <div class="blog-tab" id="tab3-3">
-                    <div>
-                        <img src="img/blog-item2.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-3-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-3-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-3-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-3-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-3-x.webp">
+                            <img src="img/blog-pic-3-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-06-07" title="2019-06-07"> June 7th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-2-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-2-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-2-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-2-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-2-x.webp">
+                            <img src="img/blog-pic-2-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-11-09" title="2019-11-09"> November 9th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item3.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    </div>               
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-1-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-1-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-1-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-1-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-1-x.webp">
+                            <img src="img/blog-pic-1-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-10-21" title="2019-10-21"> October 21th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
+                    </div>
                 </div>
                 <div class="blog-tab" id="tab4-4">
-                    <div>
-                        <img src="img/blog-item2.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-2-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-2-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-2-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-2-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-2-x.webp">
+                            <img src="img/blog-pic-2-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-10-21" title="2019-10-21"> October 21th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item3.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-3-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-3-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-3-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-3-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-3-x.webp">
+                            <img src="img/blog-pic-3-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-06-07" title="2019-06-07"> June 7th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    </div>               
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-4-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-4-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-4-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-4-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-4-x.webp">
+                            <img src="img/blog-pic-4-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-11-09" title="2019-11-09"> November 9th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
+                    </div>
                 </div>
                 <div class="blog-tab" id="tab5-5">
-                    <div>
-                        <img src="img/blog-item2.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-3-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-3-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-3-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-3-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-3-x.webp">
+                            <img src="img/blog-pic-3-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-06-07" title="2019-06-07"> June 7th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item2.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-5-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-5-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-5-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-5-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-5-x.webp">
+                            <img src="img/blog-pic-5-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-10-21" title="2019-10-21"> October 21th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item2.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    </div>               
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-2-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-2-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-2-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-2-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-2-x.webp">
+                            <img src="img/blog-pic-2-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-11-09" title="2019-11-09"> November 9th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
+                    </div>
                 </div>
                 <div class="blog-tab" id="tab6-6">
-                    <div>
-                        <img src="img/blog-item3.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-1-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-1-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-1-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-1-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-1-x.webp">
+                            <img src="img/blog-pic-1-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-11-09" title="2019-11-09"> November 9th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item3.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-3-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-3-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-3-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-3-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-3-x.webp">
+                            <img src="img/blog-pic-3-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-06-07" title="2019-06-07"> June 7th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
                     </div>
-                    <div>
-                        <img src="img/blog-item3.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    </div>               
+                    <div class="autoclear">
+                        <picture>
+                            <source srcset="img/blog-pic-5-3x.webp" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-5-3x.jpg" media="(min-width: 1069px)">
+                            <source srcset="img/blog-pic-5-2x.webp" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-5-2x.jpg" media="(min-width: 736px)">
+                            <source srcset="img/blog-pic-5-x.webp">
+                            <img src="img/blog-pic-5-x.jpg" alt="blog picture"></picture>
+                        <time datetime="2019-10-21" title="2019-10-21"> October 21th 2019 </time>
+                        <h4>Lorem ipsum dolor sit amet,</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Nulla facilisis molestie dignissim.</p>
+                    </div>
                 </div>
-                <div class="blog-tab" id="tab7-7">
-                    <div>
-                        <img src="img/blog-item.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    </div>
-                    <div>
-                        <img src="img/blog-item.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    </div>
-                    <div>
-                        <img src="img/blog-item.jpg" alt="">
-                        <h4>Test</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                    </div>               
-                </div>
+
             </div>
 
         </section><!-- /.blog-anchor -->
 
 
 
-        <section id="contact-anchor"  class="contact wrap">
+        <section id="contact-anchor" class="contact wrap">
 
             <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.272320168677!2d27.52054641638238!3d53.90913664010671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc55f35bf3dad%3A0xaabda25bdeeb761f!2z0YPQuy4g0KHQutGA0YvQs9Cw0L3QvtCy0LAgMTQsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1578016777920!5m2!1sru!2sby" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.272320168677!2d27.52054641638238!3d53.90913664010671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc55f35bf3dad%3A0xaabda25bdeeb761f!2z0YPQuy4g0KHQutGA0YvQs9Cw0L3QvtCy0LAgMTQsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1578016777920!5m2!1sru!2sby">
+                </iframe>
             </div><!-- /.map -->
-    
+
             <div class="contact-form">
-                
+
                 <h3><span>C</span>ontact <span>U</span>s</h3>
 
-                <form action="" method="post" onsubmit="return alert('You are queued for processing.');">                 
-                        <input type="text" name="yourname" required placeholder="Your name">
-                        <input class="mobile-field" type="text" name="mobile" required placeholder="Mobile">
-                        <input class="email-field" type="text" name="email" required placeholder="Email">                  
-                        <textarea name="text" spellcheck="true" required placeholder="Your Message"></textarea>                 
-                        <button type="submit">Send</button>                    
-                </form>  
-                
+                <form method="post" onsubmit="return alert('You are queued for processing.');">
+                    <input type="text" name="yourname" required placeholder="Your name">
+                    <input class="mobile-field" type="text" name="mobile" required placeholder="Mobile">
+                    <input class="email-field" type="text" name="email" required placeholder="Email">
+                    <textarea name="text" spellcheck="true" required placeholder="Your Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+
                 <ul class="contact-info">
                     <li><span>Location Map</span></li>
-                    <li><address><span>Address</span>Minsk, Skryganova 14</address></li>
+                    <li>
+                        <address><span>Address</span>Minsk, Skryganova 14</address>
+                    </li>
                     <li><span>Phone</span><a href="tel:+911253467890"></a>+91 12534 67890</li>
-                    <li class="divider"><span>Email</span><a href="mailto:grafit.kris@mail.com">grafit.kris@mail.com</a></li>
-                    <li class="social"><a href="#"><img src="img/twitter-icon.svg" alt="twitter"></a></li>
-                    <li class="social"><a href="#"><img src="img/instagram-icon.svg" alt="instagram"></a></li class="social">
-                    <li class="social"><a href="#"><img src="img/facebook-icon.svg" alt="facebook"></a></li class="social">
+                    <li class="divider"><span>Email</span><a
+                            href="mailto:grafit.kris@mail.com">grafit.kris@gmail.com</a></li>
+                    <li class="social"><a href="#"><img src="img/twitter-icon.svg" alt="link icon twitter"></a></li>
+                    <li class="social"><a href="#"><img src="img/instagram-icon.svg" alt="link icon instagram"></a></li>
+                    <li class="social"><a href="#"><img src="img/facebook-icon.svg" alt="link icon facebook"></a></li>
                 </ul>
 
             </div><!-- /.contact-form -->
-    
+
         </section><!-- /#contact-anchor -->
 
     </main>
@@ -418,30 +928,32 @@
 
     <footer class="wrap">
 
-    <div class="footer-menu">
-        <h5>Sublime</h5>
-        <ul>
-            <li><a class="scroll-link" href="#home-anchor">Home</a></li>
-            <li><a class="scroll-link" href="#about-anchor">About Sublime</a></li>
-            <li><a class="scroll-link" href="#projects-anchor">Our works</a></li>
-            <li><a class="scroll-link" href="#services-anchor">Services</a></li>
-            <li><a class="scroll-link" href="#team-anchor">Team</a></li>
-            <li><a class="scroll-link" href="#testimonials-anchor">Testimonials</a></li>
-            <li><a class="scroll-link" href="#blog-anchor">Blog</a></li>
-            <li><a class="scroll-link" href="#clients-anchor">Clients</a></li>
-            <li class="divider"><a class="scroll-link" href="#contact-anchor">Contact us</a></li>
-            <li class="social"><a href="#"><img src="img/twitter-icon.svg" alt="twitter"></a></li>
-            <li class="social"><a href="#"><img src="img/instagram-icon.svg" alt="instagram"></a></li class="social">
-            <li class="social"><a href="#"><img src="img/facebook-icon.svg" alt="facebook"></a></li class="social">
-        </ul>
-    </div><!-- /.footer-menu -->
+        <div class="footer-menu">
+            <h5>Sublime</h5>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="scroll-link" href="#about-anchor">About Sublime</a></li>
+                <li><a class="scroll-link" href="#projects-anchor">Our works</a></li>
+                <li><a class="scroll-link" href="#services-anchor">Services</a></li>
+                <li><a class="scroll-link" href="#team-anchor">Team</a></li>
+                <li><a class="scroll-link" href="#testimonials-anchor">Testimonials</a></li>
+                <li><a class="scroll-link" href="#blog-anchor">Blog</a></li>
+                <li class="divider"><a class="scroll-link" href="#contact-anchor">Contact us</a></li>
+                <li class="social"><a href="#"><img src="img/twitter-icon.svg" alt="link icon twitter"></a></li>
+                <li class="social"><a href="#"><img src="img/instagram-icon.svg" alt="link icon instagram"></a></li>
+                <li class="social"><a href="#"><img src="img/facebook-icon.svg" alt="link icon facebook"></a></li>
+            </ul>
+        </div><!-- /.footer-menu -->
 
-    <div class="footer-info"><h4><span>We</span> create Awesome Games</h4></div><!-- /.footer-info -->
+        <div class="footer-info">
+            <h4><span>We</span> create Awesome Games</h4>
+        </div><!-- /.footer-info -->
 
     </footer>
 
     <a id="btn-scroll-top" class="btn-scroll-top" href="#"></a>
 
+    <script src="slick/slick.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/js.js"></script>
 
