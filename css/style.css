@@ -872,6 +872,10 @@ width: 100%;
 
 /* Testimonials */
 
+.testimonials {
+  overflow: hidden;
+}
+
 .testimonials-box {
   background-color: #000;
   padding: 30px 0px;
